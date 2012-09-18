@@ -58,6 +58,7 @@
     </CodeAnalysisDependentAssemblyPaths>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CanCreateCategories.cs" />
     <Compile Include="CanFilterProducts.cs" />
     <Compile Include="CanGeneratePageLinks.cs" />
     <Compile Include="CanSendPaginationViewModel.cs" />
