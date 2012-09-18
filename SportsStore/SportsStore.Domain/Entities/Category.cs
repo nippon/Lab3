@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using SportsStore.Domain.Entities;
 
-namespace Lektion10.Model.Entities
+namespace SportsStore.Model.Entities
 {
     public class Category
     {

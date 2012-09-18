@@ -5,6 +5,9 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 using SportsStore.WebUI.Infrastructure;
+using System.Data.Entity;
+using SportsStore.Domain.Concrete;
+using SportsStore.Domain.Entities;
 
 namespace SportsStore.WebUI
 {
@@ -15,7 +18,7 @@ namespace SportsStore.WebUI
     {
         public static void RegisterGlobalFilters(GlobalFilterCollection filters)
         {
-            filters.Add(new HandleErrorAttribute());
+            filters.Add( new HandleErrorAttribute() );
         }
 
         public static void RegisterRoutes(RouteCollection routes)
@@ -37,7 +40,9 @@ namespace SportsStore.WebUI
             RegisterGlobalFilters(GlobalFilters.Filters);
             RegisterRoutes(RouteTable.Routes);
 
-            ControllerBuilder.Current.SetControllerFactory(new NinjectControllerFactory());
+            ControllerBuilder.Current.SetControllerFactory( new NinjectControllerFactory() );
+
+            Database.SetInitializer( new SportsStoreDbInitializer() );
         }
     }
 }
