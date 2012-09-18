@@ -8,6 +8,7 @@ using SportsStore.WebUI.Infrastructure;
 using System.Data.Entity;
 using SportsStore.Domain.Concrete;
 using SportsStore.Domain.Entities;
+using SportsStore.WebUI.Binders;
 
 namespace SportsStore.WebUI
 {
@@ -61,6 +62,8 @@ namespace SportsStore.WebUI
             ControllerBuilder.Current.SetControllerFactory( new NinjectControllerFactory() );
 
             Database.SetInitializer( new SportsStoreDbInitializer() );
+
+            ModelBinders.Binders.Add(typeof(Cart), new CartModelBinder()); 
         }
     }
 }
