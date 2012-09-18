@@ -32,6 +32,14 @@ namespace SportsStore.WebUI.Controllers
                 Cart = cart, 
                 ReturnUrl = returnUrl 
             }); 
+        }
+        public ViewResult Summary(Cart cart)
+        {
+            return View(cart);
+        }
+        public ViewResult Checkout()
+        {
+            return View(new ShippingDetails());
         } 
     } 
 } 
