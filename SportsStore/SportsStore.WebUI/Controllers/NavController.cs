@@ -23,5 +23,5 @@ namespace SportsStore.WebUI.Controllers
                                     .OrderBy(x => x);
             return View(categories);
         } 
-    } 
+    }
 }

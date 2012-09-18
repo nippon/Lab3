@@ -65,6 +65,7 @@
     <Compile Include="CanFilterProducts.cs" />
     <Compile Include="CanGeneratePageLinks.cs" />
     <Compile Include="CanSendPaginationViewModel.cs" />
+    <Compile Include="CartTests.cs" />
     <Compile Include="GenerateCategorySpecificProductCount.cs" />
     <Compile Include="IndicatesSelectedCategory.cs" />
     <Compile Include="PaginationTest.cs" />
