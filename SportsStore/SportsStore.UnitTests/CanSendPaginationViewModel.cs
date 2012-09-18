@@ -12,7 +12,7 @@ using Moq;
 namespace SportsStore.UnitTests
 {
     [TestClass]
-    public class CanSendPaginationViewModel
+    public class Can_Send_Pagination_ViewModel
     {
        [TestMethod] 
        public void Can_Send_Pagination_View_Model() { 

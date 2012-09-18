@@ -59,7 +59,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CanGeneratePageLinks.cs" />
-    <Compile Include="Can_Send_Pagination_View_Model.cs" />
+    <Compile Include="CanSendPaginationViewModel.cs" />
     <Compile Include="PaginationTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
